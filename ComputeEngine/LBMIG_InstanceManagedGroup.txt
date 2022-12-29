@@ -1,0 +1,54 @@
+POST https://www.googleapis.com/compute/beta/projects/cellular-sylph-368519/global/healthChecks
+{
+  "checkIntervalSec": 5,
+  "description": "",
+  "healthyThreshold": 3,
+  "logConfig": {
+    "enable": false
+  },
+  "name": "inst-mngd-grp-hlthchk-mtxdevlnxbkg",
+  "tcpHealthCheck": {
+    "port": 80,
+    "proxyHeader": "NONE",
+    "request": "",
+    "response": ""
+  },
+  "timeoutSec": 5,
+  "type": "TCP",
+  "unhealthyThreshold": 3
+} && POST https://www.googleapis.com/compute/beta/projects/cellular-sylph-368519/zones/us-central1-a/instanceGroupManagers
+{
+  "autoHealingPolicies": [
+    {
+      "healthCheck": "projects/cellular-sylph-368519/global/healthChecks/inst-mngd-grp-hlthchk-mtxdevlnxbkg",
+      "initialDelaySec": 300
+    }
+  ],
+  "baseInstanceName": "inst-mngd-grp-mtxdevlnxbkg",
+  "description": "",
+  "instanceTemplate": "projects/cellular-sylph-368519/global/instanceTemplates/inst-tmpl-mtxdevlnxbkg",
+  "listManagedInstancesResults": "PAGELESS",
+  "name": "inst-mngd-grp-mtxdevlnxbkg",
+  "targetSize": 1
+} && POST https://www.googleapis.com/compute/beta/projects/cellular-sylph-368519/zones/us-central1-a/autoscalers
+{
+  "autoscalingPolicy": {
+    "coolDownPeriodSec": 300,
+    "cpuUtilization": {
+      "predictiveMethod": "NONE",
+      "utilizationTarget": 0.3
+    },
+    "maxNumReplicas": 4,
+    "minNumReplicas": 1,
+    "mode": "ON",
+    "scaleInControl": {
+      "maxScaledInReplicas": {
+        "calculated": 0,
+        "fixed": 1
+      },
+      "timeWindowSec": 600
+    }
+  },
+  "name": "inst-mngd-grp-mtxdevlnxbkg",
+  "target": "projects/cellular-sylph-368519/zones/us-central1-a/instanceGroupManagers/inst-mngd-grp-mtxdevlnxbkg"
+}
