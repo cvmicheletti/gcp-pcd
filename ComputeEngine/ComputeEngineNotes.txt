@@ -1,0 +1,35 @@
+Glossary:
+Region: Geographic location of GCP DataCenter
+Zone: Each Region will have minimum of 3 separate buildings housing individual data center infrastructure w/ redundant power, internet, cooling, security, etc.
+
+GCP Virtual Server: VM Instance
+
+Machine Family:
+Machine Type:
+
+vCPU: Virtual CPU which is one core execution thread.
+
+Preemptable VM Instance: Max TTL is 24hrs and exist 
+
+Managed Instance Group (MIG):
+Unmanaged Instance Group (IG):
+Stateful Instance Group:
+Stateless Instance Group:
+Rolling Update:
+Proactive Update:
+Opportunistic Update:
+Maximum Surge:
+Maximum Unavailable:
+Rolling Restart/Replace:
+
+
+Test Topics:
+Rolling Update MaxSurge & MaxUnavailable
+
+
+GCP Help Pages:
+
+
+
+Videos:
+Instance Templates, Instance Groups, Load Balancing and HA Deployment/Updating: https://www.youtube.com/watch?v=uaoauF5p7gw
