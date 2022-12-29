@@ -1,0 +1,1 @@
+Practice configuration for REST creation of MIG w/ Loadbalancer
