@@ -1,0 +1,22 @@
+{
+  "checkIntervalSec": 5,
+  "creationTimestamp": "2022-12-29T08:04:13.430-08:00",
+  "description": "",
+  "healthyThreshold": 3,
+  "id": "4638830537031550098",
+  "kind": "compute#healthCheck",
+  "logConfig": {
+    "enable": false
+  },
+  "name": "inst-mngd-grp-hlthchk-mtxdevlnxbkg",
+  "selfLink": "projects/cellular-sylph-368519/global/healthChecks/inst-mngd-grp-hlthchk-mtxdevlnxbkg",
+  "tcpHealthCheck": {
+    "request": "",
+    "port": 80,
+    "response": "",
+    "proxyHeader": "NONE"
+  },
+  "timeoutSec": 5,
+  "type": "TCP",
+  "unhealthyThreshold": 3
+}
