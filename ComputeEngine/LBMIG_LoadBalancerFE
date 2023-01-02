@@ -1,0 +1,17 @@
+{
+  "IPAddress": "35.190.57.193",
+  "IPProtocol": "TCP",
+  "creationTimestamp": "2022-12-31T08:15:20.172-08:00",
+  "description": "",
+  "fingerprint": "LGUCGFZ9gZ0=",
+  "id": "6378933101034069751",
+  "ipVersion": "IPV4",
+  "kind": "compute#forwardingRule",
+  "labelFingerprint": "42WmSpB8rSM=",
+  "loadBalancingScheme": "EXTERNAL_MANAGED",
+  "name": "lbmig-loadbalancer",
+  "networkTier": "PREMIUM",
+  "portRange": "80-80",
+  "selfLink": "projects/cellular-sylph-368519/global/forwardingRules/lbmig-loadbalancer",
+  "target": "projects/cellular-sylph-368519/global/targetHttpProxies/lbmig-http-loadbalancer-target-proxy"
+}
