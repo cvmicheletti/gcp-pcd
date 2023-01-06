@@ -1,5 +1,12 @@
 Notes to come!
 
+app.yaml config options doc: 
+    https://cloud.google.com/appengine/docs/standard/reference/app-yaml?tab=python
+
+    https://cloud.google.com/appengine/docs/standard/configuration-files
+
+    https://cloud.google.com/appengine/docs/standard/python3/runtime
+
 Here are some of the app engine commands we will run in the next steps.
 
     cd default-service
