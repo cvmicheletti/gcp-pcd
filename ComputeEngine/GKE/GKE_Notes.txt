@@ -1,0 +1,150 @@
+addonsConfig:
+  dnsCacheConfig: {}
+  gcePersistentDiskCsiDriverConfig:
+    enabled: true
+  horizontalPodAutoscaling: {}
+  httpLoadBalancing: {}
+  kubernetesDashboard:
+    disabled: true
+  networkPolicyConfig:
+    disabled: true
+authenticatorGroupsConfig: {}
+autoscaling:
+  autoscalingProfile: BALANCED
+binaryAuthorization:
+  evaluationMode: DISABLED
+clusterIpv4Cidr: 10.4.0.0/14
+createTime: '2023-01-10T13:41:30+00:00'
+currentMasterVersion: 1.24.7-gke.900
+currentNodeCount: 3
+currentNodeVersion: 1.24.7-gke.900
+databaseEncryption:
+  state: DECRYPTED
+defaultMaxPodsConstraint:
+  maxPodsPerNode: '110'
+endpoint: 35.239.116.93
+etag: ed6cb299-e482-476b-bf3b-0e21b88827f2
+id: b47daf5379e642a1855b36d8cb851bdcf61817e00eaa4b22a09ab3b94aa9dd64
+initialClusterVersion: 1.24.7-gke.900
+instanceGroupUrls:
+- https://www.googleapis.com/compute/v1/projects/gke-cluster2-374313/zones/us-central1-c/instanceGroupManagers/gke-cluster-1-default-pool-5e2236ba-grp
+ipAllocationPolicy:
+  clusterIpv4Cidr: 10.4.0.0/14
+  clusterIpv4CidrBlock: 10.4.0.0/14
+  clusterSecondaryRangeName: gke-cluster-1-pods-b47daf53
+  servicesIpv4Cidr: 10.8.0.0/20
+  servicesIpv4CidrBlock: 10.8.0.0/20
+  servicesSecondaryRangeName: gke-cluster-1-services-b47daf53
+  stackType: IPV4
+  useIpAliases: true
+labelFingerprint: a9dc16a7
+legacyAbac: {}
+location: us-central1-c
+locations:
+- us-central1-c
+loggingConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+        - WORKLOADS
+loggingService: logging.googleapis.com/kubernetes
+maintenancePolicy:
+  resourceVersion: e3b0c442
+masterAuth:
+  clusterCaCertificate: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMRENDQXBTZ0F3SUJBZ0lRQjlSZElCUHUwMUNLdTd5MFpTTzJOREFOQmdrcWhraUc5dzBCQVFzRkFEQXYKTVMwd0t3WURWUVFERXlReFpHRmhNRFU>
+masterAuthorizedNetworksConfig:
+  gcpPublicCidrsAccessEnabled: true
+monitoringConfig:
+  componentConfig:
+    enableComponents:
+    - SYSTEM_COMPONENTS
+monitoringService: monitoring.googleapis.com/kubernetes
+name: cluster-1
+network: default
+networkConfig:
+  datapathProvider: LEGACY_DATAPATH
+  defaultSnatStatus: {}
+  network: projects/gke-cluster2-374313/global/networks/default
+  serviceExternalIpsConfig: {}
+  subnetwork: projects/gke-cluster2-374313/regions/us-central1/subnetworks/default
+nodeConfig:
+  diskSizeGb: 100
+   diskType: pd-balanced
+  imageType: COS_CONTAINERD
+  machineType: e2-medium
+  metadata:
+    disable-legacy-endpoints: 'true'
+  oauthScopes:
+  - https://www.googleapis.com/auth/devstorage.read_only
+  - https://www.googleapis.com/auth/logging.write
+  - https://www.googleapis.com/auth/monitoring
+  - https://www.googleapis.com/auth/servicecontrol
+  - https://www.googleapis.com/auth/service.management.readonly
+  - https://www.googleapis.com/auth/trace.append
+  serviceAccount: default
+  shieldedInstanceConfig:
+    enableIntegrityMonitoring: true
+  windowsNodeConfig: {}
+nodePoolAutoConfig: {}
+nodePoolDefaults:
+  nodeConfigDefaults:
+    loggingConfig:
+      variantConfig:
+        variant: DEFAULT
+nodePools:
+ autoscaling: {}
+  config:
+    diskSizeGb: 100
+    diskType: pd-balanced
+    imageType: COS_CONTAINERD
+    machineType: e2-medium
+    metadata:
+      disable-legacy-endpoints: 'true'
+    oauthScopes:
+    - https://www.googleapis.com/auth/devstorage.read_only
+    - https://www.googleapis.com/auth/logging.write
+    - https://www.googleapis.com/auth/monitoring
+    - https://www.googleapis.com/auth/servicecontrol
+    - https://www.googleapis.com/auth/service.management.readonly
+    - https://www.googleapis.com/auth/trace.append
+    serviceAccount: default
+    shieldedInstanceConfig:
+      enableIntegrityMonitoring: true
+    windowsNodeConfig: {}
+  etag: e7d3041f-735c-4245-bf64-6d7665c617c1
+  initialNodeCount: 3
+  instanceGroupUrls:
+  - https://www.googleapis.com/compute/v1/projects/gke-cluster2-374313/zones/us-central1-c/instanceGroupManagers/gke-cluster-1-default-pool-5e2236ba-grp
+   locations:
+  - us-central1-c
+  management:
+    autoRepair: true
+    autoUpgrade: true
+  maxPodsConstraint:
+    maxPodsPerNode: '110'
+  name: default-pool
+  networkConfig:
+    enablePrivateNodes: false
+    podIpv4CidrBlock: 10.4.0.0/14
+    podRange: gke-cluster-1-pods-b47daf53
+  podIpv4CidrSize: 24
+  selfLink: https://container.googleapis.com/v1/projects/gke-cluster2-374313/zones/us-central1-c/clusters/cluster-1/nodePools/default-pool
+  status: RUNNING
+  upgradeSettings:
+    maxSurge: 1
+    strategy: SURGE
+  version: 1.24.7-gke.900
+notificationConfig:
+  pubsub: {}
+privateClusterConfig:
+  privateEndpoint: 10.128.0.2
+   publicEndpoint: 35.239.116.93
+releaseChannel:  
+  channel: REGULAR
+selfLink: https://container.googleapis.com/v1/projects/gke-cluster2-374313/zones/us-central1-c/clusters/cluster-1
+servicesIpv4Cidr: 10.8.0.0/20
+shieldedNodes:
+  enabled: true
+status: RUNNING
+subnetwork: default
+zone: us-central1-c
